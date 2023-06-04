@@ -1,0 +1,140 @@
+
+<!--Objective: Styling of our WebPage-->
+
+<html>
+
+<style> 
+.div1 {
+  width: 55px;
+  height: 16px;
+}
+</style>
+    <body>
+    	 <h1 style="background-color:powderblue;"> Simple dApp Sample</h1>	
+
+       <h2 style={{textAlign:'center'}}>Deposit Money and Withdraw Twice the Amount you Deposited! </h2>
+
+      <label for="money">Input Amount You Want To Deposit :</label> <br>
+      <br>
+      <input type="text" id="money">
+      <br>
+      <br>
+       <div class="div1">
+
+        <button onclick="Deposit()"> Deposit</button><br>  
+        <div class="div1">
+        	
+        <br>
+        <br>
+      </div>
+        <button onclick="Withdraw()"> Withdraw</button><br>
+      </div>
+
+
+<!--Next Objective: Connect Webpage to our Smart Contract-->
+
+    <!-- Import the Ethersjs source-->
+
+      <script charset="utf-8"
+        src="https://cdn.ethers.io/scripts/ethers-v4.min.js" type="text/javascript">
+
+ </script>
+
+ <script>
+
+ // SPDX-License-Identifier: GPL-3.0
+pragma solidity = 0.8.1;
+
+//define the contract
+contract Money{
+    
+    //create a variable called money
+    uint money;
+    
+    //create a function that writes money to the smart contract
+    function Deposit(uint _money) public{
+        money = _money;
+    }
+    
+    //create a function the reads money from the smart contract
+    function Withdraw() public view returns(uint){
+        return money*2;
+    }
+}
+
+</script>
+
+<script>
+
+
+ ///ensure ethereum is enabled
+ window.ethereum.enable();
+
+ //define an ethers provider. In our case it is Ropsten:
+ var provider = new ethers.providers.Web3Provider(web3.currentProvider,'kovan');
+
+ //Import the contract ABI and specify the contract address on our provider's blockchain
+
+  var MoneyContractAddress = "0x0bc7486285dC685Cd2687d516f2790EB05A400DF";
+  var MoneyContractABI = 
+
+  [
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_money",
+				"type": "uint256"
+			}
+		],
+		"name": "Deposit",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "Withdraw",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+
+var MoneyContract
+  var signer
+
+ // Connect the signer to your metamask account and define the contract object using your contract address, ABI, and signer.
+
+provider.listAccounts().then(function(accounts) {
+      signer = provider.getSigner(accounts[0]);
+      MoneyContract = new ethers.Contract(MoneyContractAddress, MoneyContractABI, signer);
+    })
+
+//Create asynchronous functions to call your smart contract functions
+
+  async function Withdraw(){
+    WithdrawPromise = MoneyContract.Withdraw();
+    var Money = await WithdrawPromise;
+     console.log(Money.toNumber());
+     console.log("Congratulations, You Earned Double");
+  }
+
+  async function Deposit(){
+    let Money = document.getElementById("money").value
+            console.log(Money);
+
+  DepositPromise = MoneyContract.Deposit(Money);
+    await DepositPromise;
+
+  }
+</script>
+    </body?
+    </html>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tesla-cordapp.iml" filepath="$PROJECT_DIR$/.idea/modules/Tesla-cordapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clients/Tesla-cordapp.clients.iml" filepath="$PROJECT_DIR$/.idea/modules/clients/Tesla-cordapp.clients.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clients/Tesla-cordapp.clients.main.iml" filepath="$PROJECT_DIR$/.idea/modules/clients/Tesla-cordapp.clients.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/clients/Tesla-cordapp.clients.test.iml" filepath="$PROJECT_DIR$/.idea/modules/clients/Tesla-cordapp.clients.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/contracts/Tesla-cordapp.contracts.iml" filepath="$PROJECT_DIR$/.idea/modules/contracts/Tesla-cordapp.contracts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/contracts/Tesla-cordapp.contracts.main.iml" filepath="$PROJECT_DIR$/.idea/modules/contracts/Tesla-cordapp.contracts.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/contracts/Tesla-cordapp.contracts.test.iml" filepath="$PROJECT_DIR$/.idea/modules/contracts/Tesla-cordapp.contracts.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tesla-cordapp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Tesla-cordapp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tesla-cordapp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Tesla-cordapp.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workflows/Tesla-cordapp.workflows.iml" filepath="$PROJECT_DIR$/.idea/modules/workflows/Tesla-cordapp.workflows.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workflows/Tesla-cordapp.workflows.integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/workflows/Tesla-cordapp.workflows.integrationTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workflows/Tesla-cordapp.workflows.main.iml" filepath="$PROJECT_DIR$/.idea/modules/workflows/Tesla-cordapp.workflows.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workflows/Tesla-cordapp.workflows.test.iml" filepath="$PROJECT_DIR$/.idea/modules/workflows/Tesla-cordapp.workflows.test.iml" />
+    </modules>
+  </component>
+</project>

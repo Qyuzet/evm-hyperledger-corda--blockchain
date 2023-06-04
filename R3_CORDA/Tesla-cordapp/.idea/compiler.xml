@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="cordapp-template-java.clients.main" target="1.8" />
+      <module name="cordapp-template-java.clients.test" target="1.8" />
+      <module name="cordapp-template-java.contracts.main" target="1.8" />
+      <module name="cordapp-template-java.contracts.test" target="1.8" />
+      <module name="cordapp-template-java.main" target="1.8" />
+      <module name="cordapp-template-java.test" target="1.8" />
+      <module name="cordapp-template-java.workflows.integrationTest" target="1.8" />
+      <module name="cordapp-template-java.workflows.main" target="1.8" />
+      <module name="cordapp-template-java.workflows.test" target="1.8" />
+      <module name="Tesla-cordapp.clients.main" target="1.8" />
+      <module name="Tesla-cordapp.clients.test" target="1.8" />
+      <module name="Tesla-cordapp.contracts.main" target="1.8" />
+      <module name="Tesla-cordapp.contracts.test" target="1.8" />
+      <module name="Tesla-cordapp.main" target="1.8" />
+      <module name="Tesla-cordapp.test" target="1.8" />
+      <module name="Tesla-cordapp.workflows.integrationTest" target="1.8" />
+      <module name="Tesla-cordapp.workflows.main" target="1.8" />
+      <module name="Tesla-cordapp.workflows.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

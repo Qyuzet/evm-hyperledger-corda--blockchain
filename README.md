@@ -14,12 +14,7 @@ This project is a basic implementation of a blockchain, demonstrating core conce
 2. **Cloning the Repository:** `git clone https://github.com/Qyuzet/Blockchain.git`
 3. **Running the Project:** 
    * Navigate to the project directory: `cd Blockchain`
-   * Run the main script: `python blockchain.py`
-
-## Documentation
-
-* **blockchain.py:**  Contains the main blockchain implementation.
-* **utils.py:**  Provides utility functions for hashing and other operations.
+   * Choose the intended project on the directory
 
 ## Future Development
 

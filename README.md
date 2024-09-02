@@ -6,7 +6,7 @@ This project is a basic implementation of a blockchain, demonstrating core conce
 
 * **Block Creation:**  Creates new blocks with transactions and a hash of the previous block.
 * **Hashing:**  Uses a secure hashing algorithm to ensure data integrity.
-* **Transaction System:**  Allows for the creation and processing of simple transactions.
+* **Transaction System:**  Allows for the creation and processing of simple transactions..
 
 ## Getting Started
 

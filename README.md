@@ -1,6 +1,6 @@
 # Blockchain Project
 
-This project is a basic implementation of a blockchain, demonstrating core concepts such as hashing, block creation, and a simple transaction system.
+This project is a basic implementation of a blockchain, demonstrating core concepts such as hashing, block creation, and a simple transaction system..
 
 ## Features
 
